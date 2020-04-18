@@ -13,7 +13,7 @@ public class OrderLine {
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
-    private Product product;
+//    private Product product;
     private Integer amount;
     private BigDecimal  price;
 }

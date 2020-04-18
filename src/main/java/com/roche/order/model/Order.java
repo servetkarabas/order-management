@@ -7,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.Set;
 
 @Entity
 public class Order {
@@ -16,7 +15,7 @@ public class Order {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
     private Date    date;
-    private Set<OrderLine>  orderLines;
+//    private List<OrderLine> orderLines;
     private BigDecimal total;
 
 }
